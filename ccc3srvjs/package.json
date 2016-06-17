@@ -1,0 +1,23 @@
+{
+  "name": "ccc3srvjs",
+  "version": "1.0.0",
+  "description": "ccc3 server with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlarudgus20/ccc3.git"
+  },
+  "author": "임경현",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/dlarudgus20/ccc3/issues"
+  },
+  "homepage": "https://github.com/dlarudgus20/ccc3#readme",
+  "dependencies": {
+    "socket.io": "^1.4.6",
+    "sqlite": "^2.0.2"
+  }
+}
