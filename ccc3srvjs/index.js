@@ -1,7 +1,9 @@
 console.log('start');
 
-var io = require('socket.io')(37269);
+var port = 37269;
+
+var io = require('socket.io')(port);
 
 io.on('connection', function(sock) {
-	
+
 });
