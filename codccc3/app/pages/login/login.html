@@ -4,7 +4,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="login">
+<ion-content padding>
   <ion-list>
     <ion-item>
       <ion-label primary stacked>userid</ion-label>
@@ -12,8 +12,8 @@
     </ion-item>
     <ion-item>
       <ion-label primary stacked>password</ion-label>
-      <ion-input type="" placeholder="input password"></ion-input>
+      <ion-input type="password" placeholder="input password"></ion-input>
     </ion-item>
-    <button>Login</button>
+    <button (click)="onLoginTouch($event)">Login</button>
   </ion-list>
 </ion-content>
