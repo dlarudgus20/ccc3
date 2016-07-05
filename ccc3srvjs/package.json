@@ -2,9 +2,8 @@
   "name": "ccc3srvjs",
   "version": "1.0.0",
   "description": "ccc3 server with nodejs",
-  "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node build/app.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +18,10 @@
   "dependencies": {
     "socket.io": "^1.4.6",
     "sqlite": "^2.0.2"
+  },
+  "devDependencies": {
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^2.13.6"
   }
 }
