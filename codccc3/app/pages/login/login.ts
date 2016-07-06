@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
 import {TabsPage} from '../tabs/tabs';
-import * as io from 'socket.io-client';
+import {CCC3Socket} from '../../ccc3socket.ts';
 
 @Component({
   templateUrl: 'build/pages/login/login.html'
@@ -16,12 +16,12 @@ export class LoginPage {
   btnLogin_onClick(event) {
     this.btnLoginDisabled = true;
 
-    var socket = io("http://localhost:35769/");
-    socket.on('connect', () => {
-
+    var socket = new CCC3Socket();
+    socket.connected.subscribe(() => {
+      this.navController.push(TabsPage, {
+        socket: socket
+      });
     });
-    this.navController.push(TabsPage, {
-      socket: socket
-    });
+    socket.connect();
   }
 }
