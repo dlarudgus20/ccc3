@@ -11,12 +11,11 @@
   },
   "filesGlob": [
     "src/**/*.ts",
-    "!node_modules/**/*"
+    "!node_modules/**/*",
+    "typings/index.d.ts"
   ],
   "exclude": [
-    "node_modules",
-    "typings/global",
-    "typings/global.d.ts"
+    "node_modules"
   ],
   "compileOnSave": false,
   "atom": {

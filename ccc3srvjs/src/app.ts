@@ -4,11 +4,11 @@ console.log('start');
 
 var port = 35769;
 
-var srvsock = io(port);
+var server = io(port);
 
-srvsock.on('connection', function(sock :SocketIO.Socket) {
+server.on('connection', (sock) => {
   console.log('new connection');
-  sock.on('disconnection', function() {
+  sock.on('disconnection', () => {
     console.log('disconnected');
   });
 });
