@@ -4,7 +4,7 @@ var del = require('del');
 
 var tsProject = ts.createProject('tsconfig.json');
 
-gulp.task('scripts', function() {
+gulp.task('scripts', [ 'clean' ], function() {
   var tsResult = tsProject.src()
     .pipe(ts(tsProject));
   return tsResult.js.pipe(gulp.dest('build'));
@@ -14,4 +14,5 @@ gulp.task('clean', function() {
   return del('build');
 });
 
-gulp.task('default', ['scripts']);
+gulp.task('build', [ 'scripts' ]);
+gulp.task('default', [ 'build' ]);
