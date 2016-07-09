@@ -1,4 +1,17 @@
 {
+  "name": "codccc3",
+  "version": "1.0.0",
+  "description": "codccc3: ccc3 client with ionic 2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlarudgus20/ccc3.git"
+  },
+  "author": "임경현",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/dlarudgus20/ccc3/issues"
+  },
+  "homepage": "https://github.com/dlarudgus20/ccc3#readme",
   "dependencies": {
     "@angular/common": "2.0.0-rc.3",
     "@angular/compiler": "2.0.0-rc.3",
@@ -26,8 +39,6 @@
     "ionic-gulp-scripts-copy": "^2.0.0",
     "run-sequence": "1.1.5"
   },
-  "name": "codccc3",
-  "description": "codccc3: An Ionic project",
   "cordovaPlugins": [
     "cordova-plugin-device",
     "cordova-plugin-console",
