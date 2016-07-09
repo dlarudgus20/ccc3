@@ -8,12 +8,12 @@
   <ion-list>
     <ion-item>
       <ion-label primary stacked>userid</ion-label>
-      <ion-input placeholder="input userid"></ion-input>
+      <ion-input id="inputUsername" placeholder="input username"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label primary stacked>password</ion-label>
-      <ion-input type="password" placeholder="input password"></ion-input>
+      <ion-input id="inputPassword" type="password" placeholder="input password"></ion-input>
     </ion-item>
-    <button [disabled]="btnLoginDisabled" (click)="btnLogin_onClick($event)">Login</button>
+    <button [disabled]="btnLogin_Disabled" (click)="btnLogin_onClick($event)">Login</button>
   </ion-list>
 </ion-content>
